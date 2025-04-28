@@ -15,7 +15,7 @@ export default function FeaturesSection() {
           <div className="card-vr flex flex-col h-full">
             <div className="relative h-64 mb-6 overflow-hidden rounded-lg">
               <img 
-                src="https://images.unsplash.com/photo-1600607688960-4e5eb982b3d6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8YXJjaGl0ZWN0dXJlJTIwcmVuZGVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60" 
+                src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=60" 
                 alt="Static Render" 
                 className="w-full h-full object-cover"
               />
