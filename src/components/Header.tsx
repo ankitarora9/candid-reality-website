@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 
 export default function Header() {
@@ -7,8 +8,12 @@ export default function Header() {
     <header className="w-full py-4 px-4 md:px-8 absolute top-0 left-0 z-50">
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex items-center">
-          <LogoIcon />
-          <span className="text-xl font-medium ml-3 text-vr-blue">CANDID REALITY</span>
+          <div className="animate-float">
+            <LogoIcon />
+          </div>
+          <span className="text-xl font-medium ml-3 text-vr-blue font-orbitron tracking-wider hover:text-vr-blue-light transition-colors duration-300">
+            CANDID REALITY
+          </span>
         </div>
         
         {/* Desktop nav */}
