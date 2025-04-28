@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 
 export default function Header() {
@@ -9,7 +8,7 @@ export default function Header() {
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex items-center">
           <LogoIcon />
-          <span className="text-xl font-bold ml-3 text-vr-blue">CANDID REALITY</span>
+          <span className="text-xl font-medium ml-3 text-vr-blue">CANDID REALITY</span>
         </div>
         
         {/* Desktop nav */}
