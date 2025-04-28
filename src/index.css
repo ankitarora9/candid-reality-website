@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -13,7 +14,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
+    --primary: 210 100% 50%;
     --primary-foreground: 210 40% 98%;
 
     --secondary: 210 40% 96.1%;
@@ -35,19 +36,12 @@
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;
-
     --sidebar-foreground: 240 5.3% 26.1%;
-
     --sidebar-primary: 240 5.9% 10%;
-
     --sidebar-primary-foreground: 0 0% 98%;
-
     --sidebar-accent: 240 4.8% 95.9%;
-
     --sidebar-accent-foreground: 240 5.9% 10%;
-
     --sidebar-border: 220 13% 91%;
-
     --sidebar-ring: 217.2 91.2% 59.8%;
   }
 
@@ -61,7 +55,7 @@
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 210 40% 98%;
+    --primary: 210 100% 50%;
     --primary-foreground: 222.2 47.4% 11.2%;
 
     --secondary: 217.2 32.6% 17.5%;
@@ -96,6 +90,43 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-vr-dark text-white;
+  }
+}
+
+@layer components {
+  .glow {
+    box-shadow: 0 0 15px rgba(0, 136, 255, 0.5);
+  }
+  
+  .blue-glow {
+    text-shadow: 0 0 10px rgba(0, 136, 255, 0.7);
+  }
+  
+  .card-vr {
+    @apply bg-vr-darker rounded-xl border border-vr-blue/20 p-6 transition-all hover:border-vr-blue/50 hover:shadow-lg hover:shadow-vr-blue/10;
+  }
+
+  .section-title {
+    @apply text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-vr-blue blue-glow;
+  }
+  
+  .btn-primary {
+    @apply bg-vr-blue hover:bg-vr-blue-light text-white font-semibold py-3 px-6 rounded-lg transition-all hover:shadow-md hover:shadow-vr-blue/50;
+  }
+  
+  .btn-outline {
+    @apply bg-transparent hover:bg-vr-blue/10 text-vr-blue border border-vr-blue font-semibold py-3 px-6 rounded-lg transition-all hover:shadow-md hover:shadow-vr-blue/30;
+  }
+  
+  .form-input {
+    @apply w-full bg-vr-darker border border-vr-blue/20 rounded-lg p-3 text-white focus:border-vr-blue focus:outline-none focus:ring-1 focus:ring-vr-blue;
+  }
+
+  .bg-grid {
+    background-size: 40px 40px;
+    background-image: 
+      linear-gradient(to right, rgba(0, 136, 255, 0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(0, 136, 255, 0.05) 1px, transparent 1px);
   }
 }
